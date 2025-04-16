@@ -9,7 +9,8 @@ app.use(express.static('.'));
 //root
 app.get('/', (req, res) => {
     // your nav bar is on index.html
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    //res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 
