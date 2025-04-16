@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // add any necessary code you'd want to!
-
+app.use(express.static('public'));
 //root
 app.get('/', (req, res) => {
     // your nav bar is on index.html
